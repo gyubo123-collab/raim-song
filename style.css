@@ -122,6 +122,8 @@ body {
   margin-bottom: 12px;
   font-family: 'Jua', sans-serif;
   font-size: 1.5rem;
+  line-height: 1.35;
+  word-break: keep-all;
 }
 
 .sub {
@@ -330,5 +332,11 @@ select:focus {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .card h2 {
+    font-size: 1.32rem;
   }
 }
