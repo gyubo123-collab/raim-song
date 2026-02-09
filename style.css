@@ -20,6 +20,7 @@ body {
   font-family: 'Gowun Batang', 'Jua', serif;
   background: radial-gradient(circle at top, #fff8f2 0%, var(--bg) 45%, var(--bg-alt) 100%);
   color: var(--ink);
+  font-size: 15px;
 }
 
 .page {
