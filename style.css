@@ -20,7 +20,7 @@ body {
   font-family: 'Gowun Batang', 'Jua', serif;
   background: radial-gradient(circle at top, #fff8f2 0%, var(--bg) 45%, var(--bg-alt) 100%);
   color: var(--ink);
-  font-size: 15px;
+  font-size: 16px;
 }
 
 .page {
@@ -90,7 +90,6 @@ body {
 .hero-art {
   margin: 28px auto 0;
   width: min(250px, 80vw);
-  animation: float 6s ease-in-out infinite;
 }
 
 .hero-art svg {
@@ -98,10 +97,6 @@ body {
   height: auto;
 }
 
-@keyframes float {
-  0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(-10px); }
-}
 
 .content {
   display: grid;
