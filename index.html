@@ -1,14 +1,168 @@
 <!doctype html>
-<html lang="en">
+<html lang="ko">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Hello World</title>
-  <link href='/style.css' rel='stylesheet'>
+  <title>사주로 보는 반려동물 생각</title>
+  <link href="/style.css" rel="stylesheet" />
 </head>
 <body>
-  <h1>Hello, world!</h1>
-  <button onclick="console.log('hello');">Press me</button>
-  <script defer type="text/javascript" src="/main.js"></script>
+  <div class="page">
+    <header class="hero">
+      <div class="hero-badge">Pet Saju Studio</div>
+      <h1>사주로 보는 반려동물 생각</h1>
+      <p>
+        사랑스러운 반려동물의 오늘을 오행 · 만세력 · 절기로 따뜻하게 읽어드려요.
+        간단한 입력만으로 귀여운 해석을 만나보세요.
+      </p>
+      <div class="hero-art" aria-hidden="true">
+        <svg viewBox="0 0 220 160" role="img">
+          <defs>
+            <linearGradient id="paw" x1="0" x2="1" y1="0" y2="1">
+              <stop offset="0%" stop-color="#f4a8a5" />
+              <stop offset="100%" stop-color="#f6c3a2" />
+            </linearGradient>
+          </defs>
+          <g fill="url(#paw)">
+            <circle cx="60" cy="48" r="22" />
+            <circle cx="110" cy="34" r="20" />
+            <circle cx="160" cy="48" r="22" />
+            <circle cx="100" cy="78" r="26" />
+            <circle cx="130" cy="88" r="30" />
+          </g>
+          <path d="M25 120c25-30 70-25 85 10 10 20 40 25 60 5" fill="none" stroke="#ffffff" stroke-width="8" stroke-linecap="round" />
+        </svg>
+      </div>
+    </header>
+
+    <main class="content">
+      <section class="card">
+        <h2>반려동물 정보 입력</h2>
+        <form id="pet-form" class="form-grid">
+          <label class="field">
+            <span>반려동물 이름</span>
+            <input id="pet-name" type="text" placeholder="예: 뭉치" required />
+          </label>
+
+          <label class="field">
+            <span>성별</span>
+            <select id="pet-gender" required>
+              <option value="" disabled selected>선택해주세요</option>
+              <option value="female">암컷</option>
+              <option value="male">수컷</option>
+              <option value="neutral">중성/모름</option>
+            </select>
+          </label>
+
+          <div class="field">
+            <span>생년월일</span>
+            <div class="date-grid">
+              <select id="birth-year" required></select>
+              <select id="birth-month" required></select>
+              <select id="birth-day" required></select>
+            </div>
+          </div>
+
+          <div class="button-row">
+            <button class="submit" type="submit">사주 보기</button>
+            <button class="ghost" type="button" id="reset-btn">입력 초기화</button>
+          </div>
+        </form>
+      </section>
+
+      <section class="card">
+        <h2>오행 · 만세력 · 절기 결과</h2>
+        <p class="sub">간이 만세력 기준으로 계산된 결과이며, 참고용으로 즐겨주세요.</p>
+        <div class="table-wrap">
+          <table id="result-table">
+            <thead>
+              <tr>
+                <th>구분</th>
+                <th>결과</th>
+                <th>의미</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>오행</td>
+                <td>-</td>
+                <td>반려동물의 기질을 이루는 기본 요소</td>
+              </tr>
+              <tr>
+                <td>만세력</td>
+                <td>-</td>
+                <td>태어난 날의 간지 흐름</td>
+              </tr>
+              <tr>
+                <td>절기</td>
+                <td>-</td>
+                <td>계절의 기운과 마음 결</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="card result" id="result-section">
+        <div class="result-header">
+          <div>
+            <h2>오늘의 해석</h2>
+            <p class="result-intro">오늘(현시간 기준)의 감정, 건강운, 유대감을 자세히 해석해요.</p>
+          </div>
+          <button class="ghost" type="button" id="capture-btn">결과 이미지 저장</button>
+        </div>
+        <div class="result-cards" id="result-cards">
+          <div class="result-card">
+            <div class="card-title">
+              <span class="icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M12 21s-6.5-4.4-8.5-7.4C1.3 10.6 2.2 7.2 5 6c2-0.8 4.1 0.1 5 1.7 0.9-1.6 3-2.5 5-1.7 2.8 1.2 3.7 4.6 1.5 7.6C18.5 16.6 12 21 12 21z" />
+                </svg>
+              </span>
+              <h3>감정</h3>
+            </div>
+            <p>정보를 입력하면 감정 카드가 채워집니다.</p>
+          </div>
+          <div class="result-card">
+            <div class="card-title">
+              <span class="icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M7 19c3-5 7-5 10 0" />
+                  <path d="M5 11c2-3 4-3 6 0" />
+                  <path d="M13 11c2-3 4-3 6 0" />
+                  <circle cx="12" cy="7" r="3" />
+                </svg>
+              </span>
+              <h3>건강운</h3>
+            </div>
+            <p>정보를 입력하면 건강운 카드가 채워집니다.</p>
+          </div>
+          <div class="result-card">
+            <div class="card-title">
+              <span class="icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M7 12c0-2.8 2.2-5 5-5h5" />
+                  <path d="M17 12c0 2.8-2.2 5-5 5H7" />
+                  <path d="M5 12h14" />
+                </svg>
+              </span>
+              <h3>유대감</h3>
+            </div>
+            <p>정보를 입력하면 유대감 카드가 채워집니다.</p>
+          </div>
+        </div>
+        <div class="result-block" id="result-text">
+          <p>반려동물 정보를 입력하면 해석이 표시됩니다.</p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>사랑의 마음으로 해석한 재미 요소이며, 반려동물과의 따뜻한 하루를 위한 참고용입니다.</p>
+    </footer>
+  </div>
+
+  <script defer src="https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js"></script>
+  <script defer src="/main.js"></script>
 </body>
 </html>
