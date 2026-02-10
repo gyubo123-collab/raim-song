@@ -15,7 +15,7 @@
 
 body {
   margin: 0;
-  font-family: 'Gowun Batang', 'Jua', serif;
+  font-family: 'Gowun Batang', serif;
   background: radial-gradient(circle at top, #fff8f2 0%, var(--bg) 45%, var(--bg-alt) 100%);
   color: var(--ink);
   font-size: 16px;
@@ -99,7 +99,6 @@ html[dir="rtl"] .lang-switch {
   padding: 6px 18px;
   background: #fff;
   border-radius: 999px;
-  font-family: 'Jua', sans-serif;
   font-size: 0.9rem;
   letter-spacing: 0.08em;
   text-transform: uppercase;
@@ -108,7 +107,6 @@ html[dir="rtl"] .lang-switch {
 
 .hero h1 {
   margin: 18px 0 10px;
-  font-family: 'Jua', sans-serif;
   font-size: clamp(2rem, 3.4vw, 3.2rem);
 }
 
@@ -149,7 +147,6 @@ html[dir="rtl"] .lang-switch {
 .card h2 {
   margin-top: 0;
   margin-bottom: 12px;
-  font-family: 'Jua', sans-serif;
   font-size: 1.5rem;
   line-height: 1.35;
   word-break: keep-all;
@@ -210,7 +207,6 @@ select:focus {
 .submit,
 .ghost {
   border: none;
-  font-family: 'Jua', sans-serif;
   font-size: 1.02rem;
   padding: 14px 18px;
   border-radius: 16px;
@@ -301,7 +297,6 @@ select:focus {
 
 .card-title h3 {
   margin: 0;
-  font-family: 'Jua', sans-serif;
   font-size: 1.1rem;
 }
 
@@ -336,9 +331,6 @@ select:focus {
   line-height: 1.8;
 }
 
-.result-block strong {
-  font-family: 'Jua', sans-serif;
-}
 
 .footer {
   margin-top: auto;
