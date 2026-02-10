@@ -1298,10 +1298,10 @@ function buildInterpretation(name, element, ganziLabel, term, summary, score) {
   return `
     <p><strong>${name}</strong> (${todayLabel}) · <strong>${element.name}</strong></p>
     <p><strong>${t('analysis_title')}</strong> : ${balanceLine} ${actionGuide(summary.low)}</p>
-    <p><strong>${t('emotion_title')}</strong> : ${element.vibe} · ${termInsight}</p>
-    <p><strong>${t('health_title')}</strong> : ${ganziInsight} ${dietGuide(summary.low)}</p>
-    <p><strong>${t('bond_title')}</strong> : ${summary.secondary} 기운이 따뜻한 교감을 키워주며 ${element.name} 기운이 유대감을 단단하게 잡아줘요.</p>
-    <p><strong>${t('bonus_title')}</strong> : 목 ${score.목} · 화 ${score.화} · 토 ${score.토} · 금 ${score.금} · 수 ${score.수}</p>
+    <p><strong>${t('emotion_title')}</strong> : ${element.vibe}의 기운이 오늘의 마음을 넓게 채워서, 반려동물이 평소보다 주인을 더 찾고 작은 신호에도 반응하려는 마음이 커져요. ${termInsight} 덕분에 감정의 결이 부드러워지고, 편안함을 원하거나 살짝 애교를 부리고 싶어하는 느낌이 강해집니다.</p>
+    <p><strong>${t('health_title')}</strong> : ${ganziInsight} 몸의 리듬이 안정되는 날이라 가벼운 활동과 충분한 휴식이 균형을 만들어줘요. 과한 흥분보다는 규칙적인 놀이가 좋고, ${dietGuide(summary.low)}를 더하면 컨디션이 더 편안하게 유지됩니다.</p>
+    <p><strong>${t('bond_title')}</strong> : ${summary.secondary} 기운이 따뜻한 교감을 키워주며 ${element.name} 기운이 유대감을 단단하게 잡아줘요. 오늘은 반려동물이 주인의 반응을 세심하게 살피기 때문에, 짧은 칭찬이나 눈맞춤만으로도 신뢰가 깊어질 수 있어요.</p>
+    <p><strong>${t('bonus_title')}</strong> : 오행 점수는 목 ${score.목} · 화 ${score.화} · 토 ${score.토} · 금 ${score.금} · 수 ${score.수} 입니다. 강한 기운을 억지로 누르기보다, ${summary.low} 기운을 보완하는 루틴을 추가해주면 전체 균형이 부드럽게 맞춰져요. 오늘은 작은 배려 한 번이 큰 안정감으로 돌아오는 날입니다.</p>
   `;
 }
 
