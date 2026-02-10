@@ -3,19 +3,15 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title data-i18n="site_title">사주로 보는 반려동물 생각</title>
+  <title>사주로 보는 반려동물 생각</title>
   <link href="/style.css" rel="stylesheet" />
 </head>
 <body>
   <div class="page">
     <header class="hero">
-      <div class="lang-switch">
-        <label class="lang-label" for="language-select" data-i18n="label_language">언어</label>
-        <select id="language-select"></select>
-      </div>
-      <div class="hero-badge" data-i18n="hero_badge">Pet Saju Studio</div>
-      <h1 data-i18n="hero_title">사주로 보는 반려동물 생각</h1>
-      <p data-i18n="hero_desc">
+      <div class="hero-badge">Pet Saju Studio</div>
+      <h1>사주로 보는 반려동물 생각</h1>
+      <p>
         사랑스러운 반려동물의 오늘을 오행 · 만세력 · 절기로 따뜻하게 읽어드려요.
         간단한 입력만으로 귀여운 해석을 만나보세요.
       </p>
@@ -23,25 +19,25 @@
 
     <main class="content">
       <section class="card">
-        <h2 data-i18n="section_input_title">반려동물 정보 입력</h2>
+        <h2>반려동물 정보 입력</h2>
         <form id="pet-form" class="form-grid">
           <label class="field">
-            <span data-i18n="label_pet_name">반려동물 이름</span>
-            <input id="pet-name" type="text" placeholder="" required data-i18n-placeholder="placeholder_pet_name" />
+            <span>반려동물 이름</span>
+            <input id="pet-name" type="text" placeholder="예: 뭉치" required />
           </label>
 
           <label class="field">
-            <span data-i18n="label_gender">성별</span>
+            <span>성별</span>
             <select id="pet-gender" required>
-              <option value="" disabled selected data-i18n="option_gender_placeholder">선택해주세요</option>
-              <option value="female" data-i18n="option_gender_female">암컷</option>
-              <option value="male" data-i18n="option_gender_male">수컷</option>
-              <option value="neutral" data-i18n="option_gender_neutral">중성/모름</option>
+              <option value="" disabled selected>선택해주세요</option>
+              <option value="female">암컷</option>
+              <option value="male">수컷</option>
+              <option value="neutral">중성/모름</option>
             </select>
           </label>
 
           <div class="field">
-            <span data-i18n="label_birthdate">생년월일</span>
+            <span>생년월일</span>
             <div class="date-grid">
               <select id="birth-year" required></select>
               <select id="birth-month" required></select>
@@ -50,22 +46,22 @@
           </div>
 
           <div class="button-row">
-            <button class="submit" type="submit" data-i18n="btn_submit">사주 보기</button>
-            <button class="ghost" type="button" id="reset-btn" data-i18n="btn_reset">입력 초기화</button>
+            <button class="submit" type="submit">사주 보기</button>
+            <button class="ghost" type="button" id="reset-btn">입력 초기화</button>
           </div>
         </form>
       </section>
 
       <section class="card">
-        <h2 data-i18n="section_table_title">오행 · 만세력 · 절기 결과</h2>
-        <p class="sub" data-i18n="table_note">간이 만세력 기준으로 계산된 결과이며, 참고용으로 즐겨주세요.</p>
+        <h2>오행 · 만세력 · 절기 결과</h2>
+        <p class="sub">간이 만세력 기준으로 계산된 결과이며, 참고용으로 즐겨주세요.</p>
         <div class="table-wrap">
           <table id="result-table">
             <thead>
               <tr>
-                <th data-i18n="th_category">구분</th>
-                <th data-i18n="th_value">결과</th>
-                <th data-i18n="th_meaning">의미</th>
+                <th>구분</th>
+                <th>결과</th>
+                <th>의미</th>
               </tr>
             </thead>
             <tbody></tbody>
@@ -76,10 +72,10 @@
       <section class="card result" id="result-section">
         <div class="result-header">
           <div>
-            <h2 data-i18n="section_today_title">오늘의 해석</h2>
-            <p class="result-intro" data-i18n="section_today_intro">오늘(현시간 기준)의 감정, 건강운, 유대감을 자세히 해석해요.</p>
+            <h2>오늘의 해석</h2>
+            <p class="result-intro">오늘(현시간 기준)의 감정, 건강운, 유대감을 자연스럽게 풀어드려요.</p>
           </div>
-          <button class="ghost" type="button" id="capture-btn" data-i18n="btn_capture">결과 이미지 저장</button>
+          <button class="ghost" type="button" id="capture-btn">결과 이미지 저장</button>
         </div>
         <div class="result-cards" id="result-cards"></div>
         <div class="result-block" id="result-text"></div>
@@ -87,7 +83,7 @@
     </main>
 
     <footer class="footer">
-      <p data-i18n="footer_note">사랑의 마음으로 해석한 재미 요소이며, 반려동물과의 따뜻한 하루를 위한 참고용입니다.</p>
+      <p>사랑의 마음으로 해석한 재미 요소이며, 반려동물과의 따뜻한 하루를 위한 참고용입니다.</p>
     </footer>
   </div>
 
