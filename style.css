@@ -316,6 +316,21 @@ select:focus {
   margin-top: -6px;
 }
 
+.share-bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 12px 0 8px;
+}
+
+.share-bar .ghost,
+.share-bar a.ghost {
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .result-cards {
   display: grid;
   gap: 14px;

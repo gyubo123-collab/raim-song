@@ -10,6 +10,10 @@ const resultCards = document.getElementById('result-cards');
 const captureBtn = document.getElementById('capture-btn');
 const resetBtn = document.getElementById('reset-btn');
 const resultSection = document.getElementById('result-section');
+const shareNativeBtn = document.getElementById('share-native');
+const shareCopyBtn = document.getElementById('share-copy');
+const shareTwitter = document.getElementById('share-twitter');
+const shareFacebook = document.getElementById('share-facebook');
 
 const STORAGE_KEY = 'pet-saju-data-v1';
 
@@ -378,6 +382,52 @@ function renderPlaceholders() {
   resultText.innerHTML = `<p>${copy.placeholders.result}</p>`;
 }
 
+function updateShareLinks() {
+  const pageUrl = window.location.href;
+  const title = document.title;
+  const text = '사주로 보는 반려동물 생각에서 오늘의 해석을 확인해보세요.';
+  if (shareTwitter) {
+    shareTwitter.href = `https://twitter.com/intent/tweet?text=${encodeURIComponent(text)}&url=${encodeURIComponent(pageUrl)}`;
+  }
+  if (shareFacebook) {
+    shareFacebook.href = `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(pageUrl)}`;
+  }
+  if (shareNativeBtn && !navigator.share) {
+    shareNativeBtn.disabled = true;
+    shareNativeBtn.textContent = '공유 불가';
+  }
+}
+
+async function handleNativeShare() {
+  if (!navigator.share) return;
+  const pageUrl = window.location.href;
+  try {
+    await navigator.share({
+      title: document.title,
+      text: '사주로 보는 반려동물 생각에서 오늘의 해석을 확인해보세요.',
+      url: pageUrl,
+    });
+  } catch (error) {
+    // user cancelled
+  }
+}
+
+async function handleCopyLink() {
+  const pageUrl = window.location.href;
+  try {
+    await navigator.clipboard.writeText(pageUrl);
+    shareCopyBtn.textContent = '복사됨';
+    setTimeout(() => {
+      shareCopyBtn.textContent = '링크 복사';
+    }, 1500);
+  } catch (error) {
+    shareCopyBtn.textContent = '복사 실패';
+    setTimeout(() => {
+      shareCopyBtn.textContent = '링크 복사';
+    }, 1500);
+  }
+}
+
 function buildCards(name, element, term, summary) {
   return `
     <div class="result-card">
@@ -560,7 +610,10 @@ nameInput.addEventListener('input', saveInputs);
 genderInput.addEventListener('change', saveInputs);
 resetBtn.addEventListener('click', resetInputs);
 captureBtn.addEventListener('click', captureResult);
+shareNativeBtn.addEventListener('click', handleNativeShare);
+shareCopyBtn.addEventListener('click', handleCopyLink);
 
 initSelects();
 loadInputs();
 renderPlaceholders();
+updateShareLinks();
