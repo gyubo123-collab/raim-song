@@ -144,6 +144,27 @@ html[dir="rtl"] .lang-switch {
   border: 1px solid rgba(240, 195, 175, 0.5);
 }
 
+.geo-header .dek {
+  margin-top: 6px;
+  color: var(--muted);
+}
+
+.geo-table th,
+.geo-table td {
+  padding: 12px;
+  border-bottom: 1px solid rgba(230, 200, 200, 0.45);
+}
+
+.faq-list details {
+  padding: 12px 0;
+  border-bottom: 1px dashed rgba(224, 170, 160, 0.45);
+}
+
+.faq-list summary {
+  cursor: pointer;
+  font-weight: 700;
+}
+
 .card h2 {
   margin-top: 0;
   margin-bottom: 12px;
