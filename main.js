@@ -1293,12 +1293,14 @@ function buildCards(name, element, term, summary) {
 function buildInterpretation(name, element, ganziLabel, term, summary, score) {
   const todayLabel = `${today.getFullYear()}-${pad(today.getMonth() + 1)}-${pad(today.getDate())}`;
   const balanceLine = translations[languageSelect.value]?.balance_line?.(summary.dominant, summary.secondary, summary.low) || '';
+  const ganziInsight = `${ganziLabel}의 리듬은 ${summary.dominant} 기운을 끌어올리고 ${summary.low} 기운을 보완하는 흐름을 보여요.`;
+  const termInsight = `${term} 절기의 계절감은 감정 표현을 부드럽게 만들고 안정감을 더해줍니다.`;
   return `
     <p><strong>${name}</strong> (${todayLabel}) · <strong>${element.name}</strong></p>
     <p><strong>${t('analysis_title')}</strong> : ${balanceLine} ${actionGuide(summary.low)}</p>
-    <p><strong>${t('emotion_title')}</strong> : ${element.vibe} · ${term}</p>
-    <p><strong>${t('health_title')}</strong> : ${ganziLabel} · ${dietGuide(summary.low)}</p>
-    <p><strong>${t('bond_title')}</strong> : ${summary.secondary} · ${element.name}</p>
+    <p><strong>${t('emotion_title')}</strong> : ${element.vibe} · ${termInsight}</p>
+    <p><strong>${t('health_title')}</strong> : ${ganziInsight} ${dietGuide(summary.low)}</p>
+    <p><strong>${t('bond_title')}</strong> : ${summary.secondary} 기운이 따뜻한 교감을 키워주며 ${element.name} 기운이 유대감을 단단하게 잡아줘요.</p>
     <p><strong>${t('bonus_title')}</strong> : 목 ${score.목} · 화 ${score.화} · 토 ${score.토} · 금 ${score.금} · 수 ${score.수}</p>
   `;
 }
@@ -1401,12 +1403,12 @@ form.addEventListener('submit', (event) => {
     <tr>
       <td>${t('row_ganzi')}</td>
       <td>${ganziLabel}</td>
-      <td>${t('row_ganzi_meaning')}</td>
+      <td>${ganziLabel}의 흐름이 오늘의 기운 균형에 영향을 줘요.</td>
     </tr>
     <tr>
       <td>${t('row_term')}</td>
       <td>${term}</td>
-      <td>${t('row_term_meaning')}</td>
+      <td>${term} 절기의 기운이 감정의 결을 부드럽게 해줘요.</td>
     </tr>
   `;
 
