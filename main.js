@@ -49,6 +49,8 @@ const translations = {
     row_element_meaning: '반려동물의 기질을 이루는 기본 요소',
     row_ganzi_meaning: '태어난 날의 간지 흐름',
     row_term_meaning: '계절의 기운과 마음 결',
+    row_ganzi_desc: '간지 흐름이 오늘의 기운 균형에 영향을 줘요.',
+    row_term_desc: '절기의 계절 기운이 감정의 결을 부드럽게 해줘요.',
     section_today_title: '오늘의 해석',
     section_today_intro: '오늘(현시간 기준)의 감정, 건강운, 유대감을 자세히 해석해요.',
     btn_capture: '결과 이미지 저장',
@@ -84,6 +86,62 @@ const translations = {
       금: '규칙적인 식사 리듬과 칭찬을 함께 주세요.',
       수: '수분 섭취를 조금 더 챙겨주면 좋아요.',
     },
+    elements: {
+      목: { name: '목', vibe: '다정한 성장', note: '새싹 같은 호기심이 반짝이는 기질이에요.' },
+      화: { name: '화', vibe: '따뜻한 열정', note: '애정 표현이 풍부하게 흐르는 기운이에요.' },
+      토: { name: '토', vibe: '포근한 안정', note: '포근한 품처럼 편안함을 추구하는 기운이에요.' },
+      금: { name: '금', vibe: '선명한 집중', note: '놀이와 집중력이 또렷해지는 기운이에요.' },
+      수: { name: '수', vibe: '잔잔한 치유', note: '깊은 감정과 휴식 욕구가 커지는 기운이에요.' },
+    },
+    term_names: [
+      '소한', '대한', '입춘', '우수', '경칩', '춘분', '청명', '곡우',
+      '입하', '소만', '망종', '하지', '소서', '대서', '입추', '처서',
+      '백로', '추분', '한로', '상강', '입동', '소설', '대설', '동지',
+    ],
+    interpret: {
+      emotionLines: [
+        '오늘 반려동물의 마음속 생각은 “주인이 나를 보고 있을까?”에 가까워요. 관심을 받고 싶다는 마음이 커집니다.',
+        '지금 반려동물은 “조금 더 가까이 있고 싶어”라는 마음이 강해요. 작은 손길에도 기대감이 커집니다.',
+        '오늘의 생각은 “지금이 편안한 시간이야”로 이어지기 쉬워요. 안정감을 확인하려는 마음이 커집니다.',
+        '반려동물의 머릿속에는 “오늘은 나를 알아봐 줬으면 좋겠어”라는 메시지가 흐르고 있어요.',
+        '지금은 “조금 놀아볼까?”라는 생각이 도드라져요. 짧은 놀이에 대한 기대감이 커집니다.',
+        '오늘의 속마음은 “조용히 쉬면서도 곁에 있고 싶어”에 가까워요.',
+      ],
+      emotionTail: [
+        '그래서 조용히 곁에 머물거나 부드럽게 애교를 부리는 행동이 늘 수 있어요.',
+        '덕분에 작은 칭찬에도 기분이 쉽게 올라오는 하루예요.',
+        '마음이 차분하게 정리되어 잠시 쉬고 싶다는 신호가 자연스럽게 나올 수 있어요.',
+        '주변의 소리와 냄새에 더 섬세하게 반응할 수 있어요.',
+      ],
+      healthLines: [
+        '몸의 리듬이 안정되는 날이라 가벼운 활동과 충분한 휴식이 균형을 만들어줘요.',
+        '과한 흥분보다는 규칙적인 놀이가 컨디션에 잘 맞아요.',
+        '짧고 빈번한 휴식이 도움이 됩니다.',
+        '체력의 흐름이 고르게 퍼져 가벼운 움직임이 좋아요.',
+      ],
+      healthTail: [
+        '지금 필요한 수분·영양 보완을 더하면 컨디션이 더 편안하게 유지됩니다.',
+        '조용한 휴식 공간을 마련하면 안정감이 커져요.',
+        '짧은 놀이와 휴식을 번갈아 주면 균형이 잘 맞습니다.',
+      ],
+      bondLines: [
+        '따뜻한 교감이 커지고, 유대감이 단단하게 잡혀요.',
+        '다정함이 돋보이고 신뢰가 차분히 쌓이는 날이에요.',
+        '마음의 거리감이 줄어들고 부드럽게 연결돼요.',
+        '소통의 리듬이 살아나 교감이 자연스럽게 이어져요.',
+      ],
+      bondTail: [
+        '짧은 칭찬이나 눈맞춤만으로도 신뢰가 깊어질 수 있어요.',
+        '작은 손길 하나에도 크게 반응할 수 있으니 천천히 리듬을 맞춰보세요.',
+        '목소리 톤을 부드럽게 맞추면 유대감이 더 촘촘해질 거예요.',
+      ],
+      bonusLines: [
+        '강한 기운을 억지로 누르기보다 약한 기운을 보완하는 루틴을 더하면 균형이 부드럽게 맞춰져요.',
+        '우세한 기운을 살리면서 약한 기운을 채워주면 감정과 컨디션이 더 안정돼요.',
+        '오늘은 작은 배려가 큰 안정감으로 돌아오는 날입니다.',
+        '약한 기운을 보완하는 작은 행동을 반복해보세요.',
+      ],
+    },
   },
   en: {
     label: 'English',
@@ -118,6 +176,8 @@ const translations = {
     row_element_meaning: 'Core energy of your pet’s temperament',
     row_ganzi_meaning: 'Ganji flow of the birth date',
     row_term_meaning: 'Seasonal energy and mood texture',
+    row_ganzi_desc: 'The ganji flow shapes today’s balance of energy.',
+    row_term_desc: 'The seasonal term softens the emotional tone.',
     section_today_title: 'Today’s Reading',
     section_today_intro: 'A detailed reading of emotion, health, and bond for today.',
     btn_capture: 'Save Image',
@@ -153,6 +213,55 @@ const translations = {
       금: 'Regular meal rhythm with praise.',
       수: 'Encourage a bit more water.',
     },
+    elements: {
+      목: { name: 'Wood', vibe: 'gentle growth', note: 'A spark of curiosity and sprouting energy.' },
+      화: { name: 'Fire', vibe: 'warm passion', note: 'Affection flows easily and brightly.' },
+      토: { name: 'Earth', vibe: 'cozy stability', note: 'Seeks comfort and steady rhythms.' },
+      금: { name: 'Metal', vibe: 'clear focus', note: 'Concentration and play focus rise.' },
+      수: { name: 'Water', vibe: 'quiet healing', note: 'Deep feelings and restfulness grow.' },
+    },
+    term_names: [
+      'Minor Cold', 'Major Cold', 'Start of Spring', 'Rain Water', 'Insects Awaken', 'Spring Equinox', 'Clear and Bright', 'Grain Rain',
+      'Start of Summer', 'Grain Full', 'Grain in Ear', 'Summer Solstice', 'Minor Heat', 'Major Heat', 'Start of Autumn', 'Limit of Heat',
+      'White Dew', 'Autumn Equinox', 'Cold Dew', "Frost's Descent", 'Start of Winter', 'Minor Snow', 'Major Snow', 'Winter Solstice',
+    ],
+    interpret: {
+      emotionLines: [
+        'Your pet is thinking, “Are you looking at me right now?” The desire for attention grows.',
+        'Today their mind says, “I want to stay a bit closer.” Small touches feel extra meaningful.',
+        'Their thought is, “This feels safe.” They seek familiar sounds and steady presence.',
+      ],
+      emotionTail: [
+        'Gentle affection shows up more easily today.',
+        'Soft praise lifts their mood quickly.',
+        'A calm pace suits their heart best today.',
+      ],
+      healthLines: [
+        'The body rhythm is steady, so light activity and rest balance well.',
+        'Regular play beats intense excitement today.',
+        'Short breaks help keep energy smooth.',
+      ],
+      healthTail: [
+        'Add hydration and gentle nutrition for comfort.',
+        'A quiet resting spot helps stability.',
+        'Small play/rest cycles keep balance.',
+      ],
+      bondLines: [
+        'Warm communication deepens the bond today.',
+        'Trust builds softly with small signals.',
+        'Distance feels shorter and connection smoother.',
+      ],
+      bondTail: [
+        'A brief gaze or praise can go a long way.',
+        'Keep the tone gentle and steady.',
+        'Small rituals strengthen trust today.',
+      ],
+      bonusLines: [
+        'Support the weaker element to keep the day balanced.',
+        'A tiny adjustment in routine can stabilize mood and energy.',
+        'Gentle consistency is today’s best gift.',
+      ],
+    },
   },
   zh: {
     label: '中文',
@@ -187,6 +296,8 @@ const translations = {
     row_element_meaning: '宠物性格的核心能量',
     row_ganzi_meaning: '出生日期的干支流动',
     row_term_meaning: '季节能量与情绪质感',
+    row_ganzi_desc: '干支流动影响今天的能量平衡。',
+    row_term_desc: '节气能量让情绪更柔和。',
     section_today_title: '今日解读',
     section_today_intro: '解读今天的情绪、健康与亲密度。',
     btn_capture: '保存图片',
@@ -222,6 +333,55 @@ const translations = {
       금: '规律用餐并给予称赞。',
       수: '多补充一点水分。',
     },
+    elements: {
+      목: { name: '木', vibe: '温柔生长', note: '好奇心被点亮。' },
+      화: { name: '火', vibe: '温暖热情', note: '爱意更容易表达。' },
+      토: { name: '土', vibe: '踏实稳定', note: '偏好舒适与安定。' },
+      금: { name: '金', vibe: '清晰专注', note: '专注力提升。' },
+      수: { name: '水', vibe: '安静疗愈', note: '情绪更柔和。' },
+    },
+    term_names: [
+      '小寒', '大寒', '立春', '雨水', '惊蛰', '春分', '清明', '谷雨',
+      '立夏', '小满', '芒种', '夏至', '小暑', '大暑', '立秋', '处暑',
+      '白露', '秋分', '寒露', '霜降', '立冬', '小雪', '大雪', '冬至',
+    ],
+    interpret: {
+      emotionLines: [
+        '宠物在想“你在看我吗？”期待被关注。',
+        '它更想靠近你，轻轻的触摸也会有回应。',
+        '它的心里在说“这里很安全”。',
+      ],
+      emotionTail: [
+        '今天温柔的互动更容易发生。',
+        '轻声表扬能快速提升情绪。',
+        '慢节奏最让它安心。',
+      ],
+      healthLines: [
+        '节奏稳定，轻量活动与休息更合适。',
+        '规律游戏比强刺激更好。',
+        '短暂休息能保持状态。',
+      ],
+      healthTail: [
+        '补水与清淡饮食更舒适。',
+        '安静的休息角能增强稳定感。',
+        '小幅度玩耍与休息交替更平衡。',
+      ],
+      bondLines: [
+        '温和交流能增进亲密。',
+        '信任在细微反应中加深。',
+        '距离感缩短，连接更自然。',
+      ],
+      bondTail: [
+        '一次眼神或夸奖就很有效。',
+        '保持温柔与稳定节奏。',
+        '小仪式能加深信任。',
+      ],
+      bonusLines: [
+        '补足偏弱元素会更平衡。',
+        '小调整能让情绪更稳定。',
+        '温柔一致的照顾是今天的关键。',
+      ],
+    },
   },
   ja: {
     label: '日本語',
@@ -256,6 +416,8 @@ const translations = {
     row_element_meaning: '気質の基礎エネルギー',
     row_ganzi_meaning: '生まれた日の干支の流れ',
     row_term_meaning: '季節の気と感情の質',
+    row_ganzi_desc: '干支の流れが今日のバランスに影響します。',
+    row_term_desc: '節気の気が感情をやわらげます。',
     section_today_title: '今日の解釈',
     section_today_intro: '感情・健康運・絆を詳しく。',
     btn_capture: '画像保存',
@@ -291,6 +453,55 @@ const translations = {
       금: '規則的な食事と褒め言葉。',
       수: '水分を少し多めに。',
     },
+    elements: {
+      목: { name: '木', vibe: 'やさしい成長', note: '好奇心が芽生える。' },
+      화: { name: '火', vibe: '温かな情熱', note: '愛情が表れやすい。' },
+      토: { name: '土', vibe: '安定と安心', note: '落ち着きを求める。' },
+      금: { name: '金', vibe: '明瞭な集中', note: '集中力が高まる。' },
+      수: { name: '水', vibe: '静かな癒し', note: '心が穏やかに。' },
+    },
+    term_names: [
+      '小寒', '大寒', '立春', '雨水', '啓蟄', '春分', '清明', '穀雨',
+      '立夏', '小満', '芒種', '夏至', '小暑', '大暑', '立秋', '処暑',
+      '白露', '秋分', '寒露', '霜降', '立冬', '小雪', '大雪', '冬至',
+    ],
+    interpret: {
+      emotionLines: [
+        '今の気持ちは「見てほしい」に近いです。',
+        '「もう少し近くにいたい」という思いが強まります。',
+        '心の中では「ここは安心だ」と感じています。',
+      ],
+      emotionTail: [
+        'やさしい触れ合いが増えやすい日です。',
+        '小さな褒め言葉で気分が上がります。',
+        'ゆっくりしたリズムが合います。',
+      ],
+      healthLines: [
+        '軽い運動と休息がバランスを整えます。',
+        '強い刺激より規則的な遊びが向きます。',
+        '短い休憩が体調を支えます。',
+      ],
+      healthTail: [
+        '水分とやさしい食事がよく合います。',
+        '静かな休憩場所が安心をくれます。',
+        '遊びと休憩を交互に。',
+      ],
+      bondLines: [
+        'やわらかな交流が絆を深めます。',
+        '小さな合図で信頼が積み上がります。',
+        '距離感が縮まる日です。',
+      ],
+      bondTail: [
+        '短い視線や声かけが効果的。',
+        'やさしいトーンを意識して。',
+        '小さな習慣が信頼に。',
+      ],
+      bonusLines: [
+        '弱い要素を補うと全体が整います。',
+        '小さな調整が安定につながります。',
+        'やさしい一貫性が鍵です。',
+      ],
+    },
   },
   fr: {
     label: 'Français',
@@ -325,6 +536,8 @@ const translations = {
     row_element_meaning: 'Énergie de base du tempérament',
     row_ganzi_meaning: 'Flux ganji de la naissance',
     row_term_meaning: 'Énergie saisonnière et humeur',
+    row_ganzi_desc: 'Le flux ganji influence l’équilibre du jour.',
+    row_term_desc: 'Le terme saisonnier adoucit l’humeur.',
     section_today_title: 'Lecture du jour',
     section_today_intro: 'Émotions, santé et lien aujourd’hui.',
     btn_capture: 'Enregistrer l’image',
@@ -360,6 +573,55 @@ const translations = {
       금: 'Rythme régulier et éloges.',
       수: 'Un peu plus d’eau.',
     },
+    elements: {
+      목: { name: 'Bois', vibe: 'croissance douce', note: 'Curiosité en éveil.' },
+      화: { name: 'Feu', vibe: 'chaleur active', note: 'Affection plus visible.' },
+      토: { name: 'Terre', vibe: 'stabilité', note: 'Recherche de confort.' },
+      금: { name: 'Métal', vibe: 'focus clair', note: 'Concentration en hausse.' },
+      수: { name: 'Eau', vibe: 'apaisement', note: 'Émotions plus calmes.' },
+    },
+    term_names: [
+      'Petit Froid', 'Grand Froid', 'Début du printemps', 'Eau de pluie', 'Éveil des insectes', 'Équinoxe de printemps', 'Clair et lumineux', 'Pluie des grains',
+      'Début de l’été', 'Pleine graine', 'Grain en épi', 'Solstice d’été', 'Petite chaleur', 'Grande chaleur', 'Début de l’automne', 'Fin de chaleur',
+      'Rosée blanche', 'Équinoxe d’automne', 'Rosée froide', 'Descente du givre', 'Début de l’hiver', 'Petite neige', 'Grande neige', 'Solstice d’hiver',
+    ],
+    interpret: {
+      emotionLines: [
+        'Il pense : « Tu me regardes ? »',
+        'Il veut se rapprocher un peu plus.',
+        'Il se sent en sécurité aujourd’hui.',
+      ],
+      emotionTail: [
+        'Les gestes doux seront bien reçus.',
+        'Un petit compliment suffit à le rassurer.',
+        'Un rythme lent lui convient.',
+      ],
+      healthLines: [
+        'Activité légère et repos font équilibre.',
+        'Le calme est meilleur que l’excitation.',
+        'De petites pauses aident beaucoup.',
+      ],
+      healthTail: [
+        'Hydratation et repas doux sont idéals.',
+        'Un coin calme améliore la stabilité.',
+        'Alterner jeu et repos est parfait.',
+      ],
+      bondLines: [
+        'La connexion se renforce avec douceur.',
+        'La confiance monte par petits signes.',
+        'La distance émotionnelle diminue.',
+      ],
+      bondTail: [
+        'Un regard ou un mot suffit.',
+        'Gardez un ton tendre.',
+        'Un petit rituel aide beaucoup.',
+      ],
+      bonusLines: [
+        'Soutenez l’élément faible pour l’équilibre.',
+        'Un léger ajustement stabilise la journée.',
+        'La constance douce est la clé.',
+      ],
+    },
   },
   de: {
     label: 'Deutsch',
@@ -394,6 +656,8 @@ const translations = {
     row_element_meaning: 'Kernenergie des Temperaments',
     row_ganzi_meaning: 'Ganji-Fluss des Geburtstags',
     row_term_meaning: 'Saisonale Energie und Stimmung',
+    row_ganzi_desc: 'Der Ganji-Fluss beeinflusst die Balance des Tages.',
+    row_term_desc: 'Der Saisonterm macht die Stimmung weicher.',
     section_today_title: 'Deutung heute',
     section_today_intro: 'Gefühle, Gesundheit und Bindung heute.',
     btn_capture: 'Bild speichern',
@@ -429,6 +693,55 @@ const translations = {
       금: 'Regelmäßige Mahlzeiten und Lob.',
       수: 'Etwas mehr Wasser.',
     },
+    elements: {
+      목: { name: 'Holz', vibe: 'sanftes Wachstum', note: 'Neugier wächst.' },
+      화: { name: 'Feuer', vibe: 'warme Energie', note: 'Zuneigung ist sichtbar.' },
+      토: { name: 'Erde', vibe: 'stabile Ruhe', note: 'Sucht Komfort.' },
+      금: { name: 'Metall', vibe: 'klarer Fokus', note: 'Fokus steigt.' },
+      수: { name: 'Wasser', vibe: 'ruhige Heilung', note: 'Gefühle werden weicher.' },
+    },
+    term_names: [
+      'Kleine Kälte', 'Große Kälte', 'Beginn des Frühlings', 'Regenwasser', 'Erwachen der Insekten', 'Frühlings-Tagundnachtgleiche', 'Klar und hell', 'Getreideregen',
+      'Beginn des Sommers', 'Kornfülle', 'Korn im Ähr', 'Sommersonnenwende', 'Kleine Hitze', 'Große Hitze', 'Beginn des Herbstes', 'Ende der Hitze',
+      'Weißer Tau', 'Herbst-Tagundnachtgleiche', 'Kalter Tau', 'Frostabstieg', 'Beginn des Winters', 'Kleiner Schnee', 'Großer Schnee', 'Wintersonnenwende',
+    ],
+    interpret: {
+      emotionLines: [
+        'Der Gedanke ist: „Siehst du mich?“',
+        '„Ich möchte näher bleiben“ ist stark.',
+        'Heute fühlt es sich sicher an.',
+      ],
+      emotionTail: [
+        'Sanfte Zuwendung wirkt besonders gut.',
+        'Kleines Lob hebt die Stimmung.',
+        'Ein ruhiger Rhythmus passt am besten.',
+      ],
+      healthLines: [
+        'Leichte Bewegung und Ruhe balancieren gut.',
+        'Regelmäßiges Spiel ist besser als starke Reize.',
+        'Kurze Pausen stabilisieren den Tag.',
+      ],
+      healthTail: [
+        'Mehr Wasser und leichte Kost helfen.',
+        'Ein ruhiger Platz stärkt die Stabilität.',
+        'Spiel und Ruhe im Wechsel sind ideal.',
+      ],
+      bondLines: [
+        'Die Bindung wächst durch Wärme.',
+        'Vertrauen wächst durch kleine Zeichen.',
+        'Die Distanz fühlt sich kürzer an.',
+      ],
+      bondTail: [
+        'Ein Blick oder Lob reicht oft.',
+        'Ein sanfter Ton stärkt die Nähe.',
+        'Kleine Rituale vertiefen Vertrauen.',
+      ],
+      bonusLines: [
+        'Stütze das schwache Element für Balance.',
+        'Kleine Anpassungen stabilisieren.',
+        'Sanfte Beständigkeit ist heute der Schlüssel.',
+      ],
+    },
   },
   it: {
     label: 'Italiano',
@@ -463,6 +776,8 @@ const translations = {
     row_element_meaning: 'Energia base del temperamento',
     row_ganzi_meaning: 'Flusso ganji di nascita',
     row_term_meaning: 'Energia stagionale e umore',
+    row_ganzi_desc: 'Il flusso ganji influenza l’equilibrio di oggi.',
+    row_term_desc: 'Il termine stagionale addolcisce le emozioni.',
     section_today_title: 'Lettura di oggi',
     section_today_intro: 'Emozioni, salute e legame di oggi.',
     btn_capture: 'Salva immagine',
@@ -498,6 +813,55 @@ const translations = {
       금: 'Ritmo regolare e lodi.',
       수: 'Un po’ più d’acqua.',
     },
+    elements: {
+      목: { name: 'Legno', vibe: 'crescita dolce', note: 'Curiosità in aumento.' },
+      화: { name: 'Fuoco', vibe: 'calore', note: 'Affetto più evidente.' },
+      토: { name: 'Terra', vibe: 'stabilità', note: 'Cerca comfort.' },
+      금: { name: 'Metallo', vibe: 'focus chiaro', note: 'Concentrazione più alta.' },
+      수: { name: 'Acqua', vibe: 'calma', note: 'Emozioni più morbide.' },
+    },
+    term_names: [
+      'Piccolo freddo', 'Grande freddo', 'Inizio primavera', 'Acqua piovana', 'Risveglio insetti', 'Equinozio di primavera', 'Chiaro e luminoso', 'Pioggia dei grani',
+      'Inizio estate', 'Grano pieno', 'Grano in spiga', 'Solstizio d’estate', 'Piccolo caldo', 'Grande caldo', 'Inizio autunno', 'Fine del caldo',
+      'Rugiada bianca', 'Equinozio d’autunno', 'Rugiada fredda', 'Discesa della brina', 'Inizio inverno', 'Piccola neve', 'Grande neve', 'Solstizio d’inverno',
+    ],
+    interpret: {
+      emotionLines: [
+        'Pensa: “Mi stai guardando?”',
+        'Vuole stare un po’ più vicino.',
+        'Oggi si sente al sicuro.',
+      ],
+      emotionTail: [
+        'Le carezze leggere funzionano bene.',
+        'Un piccolo complimento alza l’umore.',
+        'Un ritmo lento è perfetto.',
+      ],
+      healthLines: [
+        'Movimento leggero e riposo sono ideali.',
+        'Meglio gioco regolare che eccitazione.',
+        'Pause brevi mantengono equilibrio.',
+      ],
+      healthTail: [
+        'Idratazione e pasti leggeri aiutano.',
+        'Un angolo tranquillo dà stabilità.',
+        'Alternare gioco e riposo è ottimo.',
+      ],
+      bondLines: [
+        'Il legame cresce con dolcezza.',
+        'La fiducia aumenta con piccoli segnali.',
+        'La distanza emotiva diminuisce.',
+      ],
+      bondTail: [
+        'Uno sguardo o una lode bastano.',
+        'Tono morbido e costante.',
+        'Piccoli rituali rafforzano.',
+      ],
+      bonusLines: [
+        'Sostieni l’elemento debole per equilibrio.',
+        'Piccoli aggiustamenti stabilizzano.',
+        'La costanza dolce è la chiave.',
+      ],
+    },
   },
   pt: {
     label: 'Português',
@@ -532,6 +896,8 @@ const translations = {
     row_element_meaning: 'Energia base do temperamento',
     row_ganzi_meaning: 'Fluxo ganji do nascimento',
     row_term_meaning: 'Energia sazonal e humor',
+    row_ganzi_desc: 'O fluxo ganji influencia o equilíbrio do dia.',
+    row_term_desc: 'O termo sazonal suaviza o humor.',
     section_today_title: 'Leitura de hoje',
     section_today_intro: 'Emoção, saúde e vínculo de hoje.',
     btn_capture: 'Salvar imagem',
@@ -567,6 +933,55 @@ const translations = {
       금: 'Ritmo regular e elogios.',
       수: 'Mais água.',
     },
+    elements: {
+      목: { name: 'Madeira', vibe: 'crescimento gentil', note: 'Curiosidade em alta.' },
+      화: { name: 'Fogo', vibe: 'calor', note: 'Afeto mais visível.' },
+      토: { name: 'Terra', vibe: 'estabilidade', note: 'Busca conforto.' },
+      금: { name: 'Metal', vibe: 'foco claro', note: 'Concentração melhora.' },
+      수: { name: 'Água', vibe: 'calma', note: 'Emoções suavizam.' },
+    },
+    term_names: [
+      'Frio menor', 'Frio maior', 'Início da primavera', 'Água da chuva', 'Despertar dos insetos', 'Equinócio da primavera', 'Claro e luminoso', 'Chuva dos grãos',
+      'Início do verão', 'Grão cheio', 'Grão em espiga', 'Solstício de verão', 'Calor menor', 'Calor maior', 'Início do outono', 'Fim do calor',
+      'Orvalho branco', 'Equinócio de outono', 'Orvalho frio', 'Descida da geada', 'Início do inverno', 'Neve menor', 'Neve maior', 'Solstício de inverno',
+    ],
+    interpret: {
+      emotionLines: [
+        'Ele pensa: “Você está me olhando?”',
+        'Quer ficar um pouco mais perto.',
+        'Hoje se sente seguro.',
+      ],
+      emotionTail: [
+        'Carinho leve funciona bem.',
+        'Um elogio pequeno melhora o humor.',
+        'Ritmo lento é o ideal.',
+      ],
+      healthLines: [
+        'Movimento leve e descanso equilibram.',
+        'Melhor jogo regular do que excitação.',
+        'Pausas curtas mantêm o ritmo.',
+      ],
+      healthTail: [
+        'Hidratação e comida leve ajudam.',
+        'Um canto calmo dá estabilidade.',
+        'Alternar brincar e descansar é ótimo.',
+      ],
+      bondLines: [
+        'O vínculo cresce com suavidade.',
+        'A confiança aumenta com sinais pequenos.',
+        'A distância emocional diminui.',
+      ],
+      bondTail: [
+        'Um olhar ou elogio já ajuda.',
+        'Tono suave e constante.',
+        'Rituais pequenos fortalecem.',
+      ],
+      bonusLines: [
+        'Apoie o elemento fraco para equilibrar.',
+        'Pequenos ajustes estabilizam.',
+        'Consistência gentil é a chave.',
+      ],
+    },
   },
   es: {
     label: 'Español',
@@ -601,6 +1016,8 @@ const translations = {
     row_element_meaning: 'Energía base del temperamento',
     row_ganzi_meaning: 'Flujo ganji del nacimiento',
     row_term_meaning: 'Energía estacional y ánimo',
+    row_ganzi_desc: 'El flujo ganji influye en el equilibrio del día.',
+    row_term_desc: 'El término estacional suaviza el ánimo.',
     section_today_title: 'Lectura de hoy',
     section_today_intro: 'Emoción, salud y vínculo hoy.',
     btn_capture: 'Guardar imagen',
@@ -636,6 +1053,55 @@ const translations = {
       금: 'Ritmo regular y elogios.',
       수: 'Más agua.',
     },
+    elements: {
+      목: { name: 'Madera', vibe: 'crecimiento suave', note: 'Curiosidad en alza.' },
+      화: { name: 'Fuego', vibe: 'calor', note: 'El afecto se nota.' },
+      토: { name: 'Tierra', vibe: 'estabilidad', note: 'Busca comodidad.' },
+      금: { name: 'Metal', vibe: 'enfoque claro', note: 'Mejora la concentración.' },
+      수: { name: 'Agua', vibe: 'calma', note: 'Emociones suaves.' },
+    },
+    term_names: [
+      'Frío menor', 'Frío mayor', 'Inicio de primavera', 'Agua de lluvia', 'Despertar de insectos', 'Equinoccio de primavera', 'Claro y brillante', 'Lluvia de granos',
+      'Inicio de verano', 'Grano lleno', 'Grano en espiga', 'Solsticio de verano', 'Calor menor', 'Calor mayor', 'Inicio de otoño', 'Fin del calor',
+      'Rocío blanco', 'Equinoccio de otoño', 'Rocío frío', 'Descenso de escarcha', 'Inicio de invierno', 'Nieve menor', 'Nieve mayor', 'Solsticio de invierno',
+    ],
+    interpret: {
+      emotionLines: [
+        'Piensa: “¿Me estás mirando?”',
+        'Quiere estar un poco más cerca.',
+        'Hoy se siente seguro.',
+      ],
+      emotionTail: [
+        'Las caricias suaves funcionan bien.',
+        'Un pequeño elogio mejora el ánimo.',
+        'El ritmo lento le sienta mejor.',
+      ],
+      healthLines: [
+        'Actividad ligera y descanso equilibran.',
+        'Mejor juego regular que mucha excitación.',
+        'Pausas cortas ayudan.',
+      ],
+      healthTail: [
+        'Hidratación y comida ligera ayudan.',
+        'Un rincón tranquilo da estabilidad.',
+        'Alternar juego y descanso es ideal.',
+      ],
+      bondLines: [
+        'El vínculo crece con suavidad.',
+        'La confianza aumenta con señales pequeñas.',
+        'La distancia emocional disminuye.',
+      ],
+      bondTail: [
+        'Una mirada o elogio basta.',
+        'Tono suave y constante.',
+        'Pequeños rituales fortalecen.',
+      ],
+      bonusLines: [
+        'Apoya el elemento débil para equilibrar.',
+        'Pequeños ajustes estabilizan.',
+        'La constancia suave es la clave.',
+      ],
+    },
   },
   ar: {
     label: 'العربية',
@@ -670,6 +1136,8 @@ const translations = {
     row_element_meaning: 'طاقة مزاج الحيوان',
     row_ganzi_meaning: 'تدفق الغانجي للميلاد',
     row_term_meaning: 'طاقة الموسم والمشاعر',
+    row_ganzi_desc: 'تدفق الغانجي يؤثر في توازن اليوم.',
+    row_term_desc: 'المصطلح الموسمي يلين المزاج.',
     section_today_title: 'قراءة اليوم',
     section_today_intro: 'العاطفة والصحة والارتباط اليوم.',
     btn_capture: 'حفظ الصورة',
@@ -705,6 +1173,55 @@ const translations = {
       금: 'إيقاع منتظم مع مدح.',
       수: 'زيادة بسيطة في الماء.',
     },
+    elements: {
+      목: { name: 'خشب', vibe: 'نمو هادئ', note: 'فضول يتزايد.' },
+      화: { name: 'نار', vibe: 'دفء', note: 'محبة أكثر وضوحًا.' },
+      토: { name: 'أرض', vibe: 'ثبات', note: 'يميل للراحة.' },
+      금: { name: 'معدن', vibe: 'تركيز واضح', note: 'تركيز أعلى.' },
+      수: { name: 'ماء', vibe: 'هدوء', note: 'مشاعر ألطف.' },
+    },
+    term_names: [
+      'برد صغير', 'برد كبير', 'بداية الربيع', 'ماء المطر', 'يقظة الحشرات', 'الاعتدال الربيعي', 'صافٍ ومشرق', 'مطر الحبوب',
+      'بداية الصيف', 'امتلاء الحبوب', 'حبوب السنابل', 'الانقلاب الصيفي', 'حرارة صغيرة', 'حرارة كبيرة', 'بداية الخريف', 'نهاية الحرارة',
+      'ندى أبيض', 'الاعتدال الخريفي', 'ندى بارد', 'هبوط الصقيع', 'بداية الشتاء', 'ثلج صغير', 'ثلج كبير', 'الانقلاب الشتوي',
+    ],
+    interpret: {
+      emotionLines: [
+        'يفكر: «هل تلاحظني؟»',
+        'يريد أن يكون أقرب قليلًا.',
+        'يشعر بالأمان اليوم.',
+      ],
+      emotionTail: [
+        'اللمسات اللطيفة مناسبة جدًا.',
+        'الثناء البسيط يرفع المزاج.',
+        'الإيقاع الهادئ هو الأفضل.',
+      ],
+      healthLines: [
+        'الحركة الخفيفة والراحة متوازنتان.',
+        'اللعب المنتظم أفضل من الإثارة الزائدة.',
+        'فترات الراحة القصيرة مفيدة.',
+      ],
+      healthTail: [
+        'الترطيب والطعام الخفيف يساعدان.',
+        'مكان هادئ يزيد الاستقرار.',
+        'التناوب بين اللعب والراحة مناسب.',
+      ],
+      bondLines: [
+        'الترابط يقوى باللطف.',
+        'الثقة تزيد بإشارات صغيرة.',
+        'المسافة العاطفية تقل.',
+      ],
+      bondTail: [
+        'نظرة أو مديح يكفي.',
+        'نبرة لطيفة وثابتة.',
+        'عادات صغيرة تقوي الثقة.',
+      ],
+      bonusLines: [
+        'ادعم العنصر الضعيف لتحقيق التوازن.',
+        'تعديلات بسيطة تمنح الاستقرار.',
+        'الاستمرارية اللطيفة هي المفتاح.',
+      ],
+    },
   },
   th: {
     label: 'ไทย',
@@ -739,6 +1256,8 @@ const translations = {
     row_element_meaning: 'พลังหลักของนิสัย',
     row_ganzi_meaning: 'การไหลของกันจิในวันเกิด',
     row_term_meaning: 'พลังฤดูกาลและอารมณ์',
+    row_ganzi_desc: 'การไหลของกันจิมีผลต่อสมดุลวันนี้',
+    row_term_desc: 'ฤดูกาลทำให้อารมณ์อ่อนโยนขึ้น',
     section_today_title: 'คำทำนายวันนี้',
     section_today_intro: 'อารมณ์ สุขภาพ และความผูกพันวันนี้',
     btn_capture: 'บันทึกรูป',
@@ -774,6 +1293,55 @@ const translations = {
       금: 'มื้ออาหารเป็นเวลาและคำชม',
       수: 'เพิ่มน้ำเล็กน้อย',
     },
+    elements: {
+      목: { name: 'ไม้', vibe: 'เติบโตอย่างอ่อนโยน', note: 'ความอยากรู้อยากเห็นเพิ่มขึ้น' },
+      화: { name: 'ไฟ', vibe: 'อบอุ่น', note: 'ความรักแสดงออกง่าย' },
+      토: { name: 'ดิน', vibe: 'มั่นคง', note: 'ต้องการความสบาย' },
+      금: { name: 'โลหะ', vibe: 'โฟกัสชัดเจน', note: 'สมาธิดีขึ้น' },
+      수: { name: 'น้ำ', vibe: 'สงบ', note: 'อารมณ์นุ่มนวล' },
+    },
+    term_names: [
+      'หนาวน้อย', 'หนาวมาก', 'เริ่มฤดูใบไม้ผลิ', 'น้ำฝน', 'แมลงตื่น', 'วสันตวิษุวัต', 'แจ่มใส', 'ฝนเมล็ดพืช',
+      'เริ่มฤดูร้อน', 'เมล็ดเต็ม', 'เมล็ดในรวง', 'ครีษมายัน', 'ร้อนน้อย', 'ร้อนมาก', 'เริ่มฤดูใบไม้ร่วง', 'สิ้นสุดความร้อน',
+      'น้ำค้างขาว', 'ศารทวิษุวัต', 'น้ำค้างเย็น', 'น้ำค้างแข็ง', 'เริ่มฤดูหนาว', 'หิมะน้อย', 'หิมะมาก', 'เหมายัน',
+    ],
+    interpret: {
+      emotionLines: [
+        'คิดว่า “มองฉันอยู่ไหม?”',
+        'อยากอยู่ใกล้ขึ้นอีกนิด',
+        'วันนี้รู้สึกปลอดภัย',
+      ],
+      emotionTail: [
+        'การสัมผัสเบา ๆ เข้ากันมาก',
+        'คำชมเล็ก ๆ ทำให้อารมณ์ดี',
+        'จังหวะช้าเหมาะที่สุด',
+      ],
+      healthLines: [
+        'กิจกรรมเบา ๆ กับพักผ่อนสมดุล',
+        'เล่นแบบสม่ำเสมอดีกว่าตื่นเต้นเกินไป',
+        'พักสั้น ๆ ช่วยได้มาก',
+      ],
+      healthTail: [
+        'ดื่มน้ำและอาหารเบาช่วยได้',
+        'มุมสงบช่วยเพิ่มความมั่นคง',
+        'สลับเล่นและพักจะดี',
+      ],
+      bondLines: [
+        'ความผูกพันเพิ่มด้วยความอ่อนโยน',
+        'ความไว้วางใจเพิ่มจากสัญญาณเล็ก ๆ',
+        'ระยะห่างทางใจลดลง',
+      ],
+      bondTail: [
+        'สบตาหรือชมสั้น ๆ ก็พอ',
+        'ใช้โทนอ่อนโยนสม่ำเสมอ',
+        'กิจวัตรเล็ก ๆ เสริมความเชื่อใจ',
+      ],
+      bonusLines: [
+        'เติมธาตุที่อ่อนเพื่อสมดุล',
+        'ปรับเล็กน้อยช่วยให้มั่นคง',
+        'ความสม่ำเสมออย่างอ่อนโยนคือกุญแจ',
+      ],
+    },
   },
   vi: {
     label: 'Tiếng Việt',
@@ -808,6 +1376,8 @@ const translations = {
     row_element_meaning: 'Năng lượng cốt lõi của tính cách',
     row_ganzi_meaning: 'Dòng ganji ngày sinh',
     row_term_meaning: 'Năng lượng mùa và cảm xúc',
+    row_ganzi_desc: 'Dòng ganji ảnh hưởng đến cân bằng hôm nay.',
+    row_term_desc: 'Tiết khí làm cảm xúc dịu hơn.',
     section_today_title: 'Luận giải hôm nay',
     section_today_intro: 'Cảm xúc, sức khỏe và gắn kết hôm nay.',
     btn_capture: 'Lưu ảnh',
@@ -843,6 +1413,55 @@ const translations = {
       금: 'Ăn đúng giờ và khen ngợi.',
       수: 'Uống thêm nước.',
     },
+    elements: {
+      목: { name: 'Mộc', vibe: 'tăng trưởng dịu', note: 'Tò mò tăng lên.' },
+      화: { name: 'Hỏa', vibe: 'ấm áp', note: 'Tình cảm rõ hơn.' },
+      토: { name: 'Thổ', vibe: 'ổn định', note: 'Thích thoải mái.' },
+      금: { name: 'Kim', vibe: 'tập trung', note: 'Tập trung tốt hơn.' },
+      수: { name: 'Thủy', vibe: 'dịu dàng', note: 'Cảm xúc mềm hơn.' },
+    },
+    term_names: [
+      'Tiểu hàn', 'Đại hàn', 'Lập xuân', 'Vũ thủy', 'Kinh trập', 'Xuân phân', 'Thanh minh', 'Cốc vũ',
+      'Lập hạ', 'Tiểu mãn', 'Mang chủng', 'Hạ chí', 'Tiểu thử', 'Đại thử', 'Lập thu', 'Xử thử',
+      'Bạch lộ', 'Thu phân', 'Hàn lộ', 'Sương giáng', 'Lập đông', 'Tiểu tuyết', 'Đại tuyết', 'Đông chí',
+    ],
+    interpret: {
+      emotionLines: [
+        'Bé nghĩ: “Bạn có nhìn mình không?”',
+        'Muốn ở gần hơn một chút.',
+        'Hôm nay cảm thấy an toàn.',
+      ],
+      emotionTail: [
+        'Chạm nhẹ sẽ hợp hơn.',
+        'Lời khen nhỏ giúp tâm trạng tốt.',
+        'Nhịp chậm là phù hợp nhất.',
+      ],
+      healthLines: [
+        'Vận động nhẹ và nghỉ ngơi cân bằng.',
+        'Chơi đều đặn tốt hơn kích thích mạnh.',
+        'Nghỉ ngắn giúp duy trì thể trạng.',
+      ],
+      healthTail: [
+        'Bổ sung nước và đồ ăn nhẹ sẽ tốt.',
+        'Góc yên tĩnh tăng ổn định.',
+        'Luân phiên chơi và nghỉ là hợp.',
+      ],
+      bondLines: [
+        'Sự gắn kết tăng nhờ dịu dàng.',
+        'Niềm tin tăng từ dấu hiệu nhỏ.',
+        'Khoảng cách cảm xúc giảm.',
+      ],
+      bondTail: [
+        'Một ánh nhìn hay lời khen là đủ.',
+        'Giọng nhẹ nhàng sẽ tốt hơn.',
+        'Thói quen nhỏ giúp tăng tin cậy.',
+      ],
+      bonusLines: [
+        'Bổ sung yếu tố yếu để cân bằng.',
+        'Điều chỉnh nhỏ giúp ổn định.',
+        'Sự nhất quán nhẹ nhàng là chìa khóa.',
+      ],
+    },
   },
   ru: {
     label: 'Русский',
@@ -877,6 +1496,8 @@ const translations = {
     row_element_meaning: 'Базовая энергия темперамента',
     row_ganzi_meaning: 'Поток ганжи дня рождения',
     row_term_meaning: 'Сезонная энергия и настроение',
+    row_ganzi_desc: 'Поток ганжи влияет на баланс дня.',
+    row_term_desc: 'Сезонный термин смягчает настроение.',
     section_today_title: 'Чтение на сегодня',
     section_today_intro: 'Эмоции, здоровье и связь сегодня.',
     btn_capture: 'Сохранить изображение',
@@ -911,6 +1532,55 @@ const translations = {
       토: 'Тёплая обстановка и режим.',
       금: 'Регулярные приёмы пищи и похвала.',
       수: 'Больше воды.',
+    },
+    elements: {
+      목: { name: 'Дерево', vibe: 'мягкий рост', note: 'Любопытство возрастает.' },
+      화: { name: 'Огонь', vibe: 'тепло', note: 'Нежность заметнее.' },
+      토: { name: 'Земля', vibe: 'стабильность', note: 'Тянется к комфорту.' },
+      금: { name: 'Металл', vibe: 'ясный фокус', note: 'Концентрация выше.' },
+      수: { name: 'Вода', vibe: 'тихое успокоение', note: 'Эмоции мягче.' },
+    },
+    term_names: [
+      'Малый холод', 'Большой холод', 'Начало весны', 'Дождевая вода', 'Пробуждение насекомых', 'Весеннее равноденствие', 'Ясно и светло', 'Зерновой дождь',
+      'Начало лета', 'Полнота зерна', 'Колос зерна', 'Летнее солнцестояние', 'Малая жара', 'Большая жара', 'Начало осени', 'Конец жары',
+      'Белая роса', 'Осеннее равноденствие', 'Холодная роса', 'Снижение мороза', 'Начало зимы', 'Малый снег', 'Большой снег', 'Зимнее солнцестояние',
+    ],
+    interpret: {
+      emotionLines: [
+        'Думает: «Ты меня видишь?»',
+        'Хочет быть чуть ближе.',
+        'Сегодня чувствует безопасность.',
+      ],
+      emotionTail: [
+        'Нежные прикосновения особенно подходят.',
+        'Небольшая похвала быстро поднимает настроение.',
+        'Спокойный ритм самый лучший.',
+      ],
+      healthLines: [
+        'Лёгкая активность и отдых дают баланс.',
+        'Лучше регулярная игра, чем сильные стимулы.',
+        'Короткие паузы помогают.',
+      ],
+      healthTail: [
+        'Вода и лёгкая еда полезны.',
+        'Тихое место усиливает стабильность.',
+        'Чередование игры и отдыха идеально.',
+      ],
+      bondLines: [
+        'Связь растёт через мягкость.',
+        'Доверие растёт от маленьких сигналов.',
+        'Эмоциональная дистанция уменьшается.',
+      ],
+      bondTail: [
+        'Взгляд или похвала уже работают.',
+        'Мягкий тон важен.',
+        'Небольшие ритуалы укрепляют доверие.',
+      ],
+      bonusLines: [
+        'Поддержите слабый элемент для баланса.',
+        'Небольшие изменения стабилизируют.',
+        'Мягкая последовательность — ключ.',
+      ],
     },
   },
 };
@@ -984,10 +1654,30 @@ function pad(num) {
   return String(num).padStart(2, '0');
 }
 
+function getLang() {
+  return languageSelect.value || 'ko';
+}
+
 function t(key) {
-  const lang = languageSelect.value || 'ko';
+  const lang = getLang();
   const dict = translations[lang] || translations.ko;
   return dict[key] ?? translations.ko[key] ?? '';
+}
+
+function getElementInfo(elementKey) {
+  const lang = getLang();
+  return translations[lang]?.elements?.[elementKey] || translations.ko.elements[elementKey];
+}
+
+function getTermName(index) {
+  const lang = getLang();
+  const list = translations[lang]?.term_names || translations.ko.term_names;
+  return list[index] || translations.ko.term_names[index] || '';
+}
+
+function getInterpretSet() {
+  const lang = getLang();
+  return translations[lang]?.interpret || translations.ko.interpret;
 }
 
 function initLanguageOptions() {
@@ -1004,7 +1694,7 @@ function initLanguageOptions() {
 }
 
 function applyLanguage() {
-  const lang = languageSelect.value || 'ko';
+  const lang = getLang();
   localStorage.setItem(LANG_KEY, lang);
   document.documentElement.lang = lang;
   document.documentElement.dir = translations[lang]?.dir || 'ltr';
@@ -1224,30 +1914,30 @@ function elementSummary(score) {
 }
 
 function actionGuide(lowElement) {
-  const guide = t('guide_action')?.[lowElement];
-  return guide || t('guide_action')?.목 || '';
+  const guide = translations[getLang()]?.guide_action?.[lowElement];
+  return guide || translations.ko.guide_action[lowElement];
 }
 
 function dietGuide(lowElement) {
-  const guide = t('guide_diet')?.[lowElement];
-  return guide || t('guide_diet')?.목 || '';
+  const guide = translations[getLang()]?.guide_diet?.[lowElement];
+  return guide || translations.ko.guide_diet[lowElement];
 }
 
-function getSolarTerm(date) {
+function getSolarTermIndex(date) {
   const year = date.getFullYear();
-  const items = solarTermCalendar.map((term) => ({
-    name: term.name,
+  const items = solarTermCalendar.map((term, index) => ({
+    index,
     date: new Date(year, term.month - 1, term.day),
   }));
   for (let i = items.length - 1; i >= 0; i -= 1) {
     if (date >= items[i].date) {
-      return items[i].name;
+      return items[i].index;
     }
   }
-  return '동지';
+  return 23;
 }
 
-function buildCards(name, element, term, summary) {
+function buildCards(name, elementInfo, termName, summary) {
   return `
     <div class="result-card">
       <div class="card-title">
@@ -1258,7 +1948,7 @@ function buildCards(name, element, term, summary) {
         </span>
         <h3>${t('card_emotion')}</h3>
       </div>
-      <p>${name} ${t('emotion_title')} · ${element.vibe} · ${term}</p>
+      <p>${name} · ${elementInfo.vibe} · ${termName}</p>
     </div>
     <div class="result-card">
       <div class="card-title">
@@ -1272,7 +1962,7 @@ function buildCards(name, element, term, summary) {
         </span>
         <h3>${t('card_health')}</h3>
       </div>
-      <p>${summary.dominant} ↑, ${summary.low} ↓ · ${actionGuide(summary.low)}</p>
+      <p>${getElementInfo(summary.dominant).name} ↑, ${getElementInfo(summary.low).name} ↓</p>
     </div>
     <div class="result-card">
       <div class="card-title">
@@ -1285,98 +1975,27 @@ function buildCards(name, element, term, summary) {
         </span>
         <h3>${t('card_bond')}</h3>
       </div>
-      <p>${summary.secondary} · ${t('bond_title')}</p>
+      <p>${getElementInfo(summary.secondary).name} · ${t('bond_title')}</p>
     </div>
   `;
 }
 
-function buildInterpretation(name, element, ganziLabel, term, summary, score) {
+function buildInterpretation(name, elementInfo, ganziLabel, termName, summary, score, seedValue) {
   const todayLabel = `${today.getFullYear()}-${pad(today.getMonth() + 1)}-${pad(today.getDate())}`;
-  const balanceLine = translations[languageSelect.value]?.balance_line?.(summary.dominant, summary.secondary, summary.low) || '';
-  const ganziInsight = `${ganziLabel}의 리듬은 ${summary.dominant} 기운을 끌어올리고 ${summary.low} 기운을 보완하는 흐름을 보여요.`;
-  const termInsight = `${term} 절기의 계절감은 감정 표현을 부드럽게 만들고 안정감을 더해줍니다.`;
-  const petSeed = seedFromInput(name, genderInput.value, Number(yearSelect.value), Number(monthSelect.value), Number(daySelect.value));
-  const seedValue = petSeed + score.목 * 3 + score.화 * 5 + score.토 * 7 + score.금 * 11 + score.수 * 13;
-  const emotionLines = [
-    `오늘 반려동물의 마음속 생각은 “주인이 나를 보고 있을까?”에 가까워요. ${element.vibe}의 기운이 올라와 시선과 기척에 민감해지고, 관심을 받고 싶다는 생각이 커집니다.`,
-    `지금 반려동물은 “조금 더 가까이 있고 싶어”라는 마음이 강해요. ${element.name} 기운이 살아나 작은 손길에도 기대감을 느끼고, 가까이 머물고 싶다는 생각이 자주 떠올라요.`,
-    `오늘의 생각은 “지금이 편안한 시간이야”로 이어지기 쉬워요. ${element.note} 덕분에 안전한 공간과 익숙한 목소리를 선호하고, 안정감을 확인하려는 마음이 커집니다.`,
-    `반려동물의 머릿속에는 “오늘은 나를 알아봐 줬으면 좋겠어”라는 메시지가 흐르고 있어요. 주변을 살피며 주인의 반응을 기다리는 마음이 은근히 강합니다.`,
-    `지금은 “조금 놀아볼까?”라는 생각이 도드라져요. ${element.name} 기운이 활짝 피면서 짧은 놀이에 대한 기대감이 커집니다.`,
-    `오늘의 속마음은 “조용히 쉬면서도 곁에 있고 싶어”에 가까워요. 차분한 분위기 속에서 함께 시간을 나누고 싶어합니다.`,
-    `반려동물은 “나를 안심시켜줘”라는 감각을 가지고 있어요. 익숙한 루틴과 부드러운 목소리가 마음을 안정시켜줍니다.`,
-    `오늘은 “내가 안전한지 확인하고 싶어”라는 생각이 스며들어요. 작은 변화에도 민감해져 주인의 반응을 살핍니다.`,
-    `“조금 더 칭찬받고 싶어”라는 마음이 커져요. 작은 행동에도 반응해 주길 바라는 날입니다.`,
-    `지금의 생각은 “여기서 더 머물래”에 가까워요. 익숙한 자리와 따뜻한 체온을 선호합니다.`,
-  ];
-  const emotionTail = [
-    `${termInsight} 그래서 조용히 곁에 머물거나 부드럽게 애교를 부리는 행동이 늘 수 있어요.`,
-    `${termInsight} 덕분에 생각이 느긋해지고, 작은 칭찬에도 기분이 쉽게 올라오는 하루예요.`,
-    `${termInsight}로 인해 마음이 차분하게 정리되어, 잠시 쉬고 싶다는 신호가 자연스럽게 나올 수 있어요.`,
-    `${termInsight} 덕분에 주변의 소리와 냄새에 더 섬세하게 반응할 수 있어요.`,
-    `${termInsight}가 안정감을 키워주어, 오늘은 잔잔한 교감이 특히 잘 맞아요.`,
-    `${termInsight}로 인해 감정이 부드럽게 흘러, 무리한 자극은 피하는 편이 좋아요.`,
-    `${termInsight}가 기분을 포근하게 만들어, 살짝 장난스러운 신호가 늘 수 있습니다.`,
-    `${termInsight}로 인해 오늘은 느린 리듬이 가장 잘 어울립니다.`,
-  ];
-  const healthLines = [
-    `${ganziInsight} 몸의 리듬이 안정되는 날이라 가벼운 활동과 충분한 휴식이 균형을 만들어줘요.`,
-    `${ganziInsight} 오늘은 과한 흥분보다는 규칙적인 놀이가 컨디션에 잘 맞아요.`,
-    `${ganziInsight} 컨디션이 흔들리지 않도록 짧고 빈번한 휴식이 도움이 됩니다.`,
-    `${ganziInsight} 체력의 흐름이 고르게 퍼져 과도한 운동보다 가벼운 움직임이 좋아요.`,
-    `${ganziInsight} 신체 리듬이 차분해져 잠깐의 휴식이 크게 도움이 되는 날입니다.`,
-    `${ganziInsight} 몸의 균형이 서서히 맞춰지는 날이라 무리하지 않는 것이 포인트예요.`,
-    `${ganziInsight} 활동성과 휴식의 리듬을 맞추면 피로감이 줄어들 수 있어요.`,
-    `${ganziInsight} 오늘은 평소보다 컨디션의 변동 폭이 작아 안정적인 하루가 됩니다.`,
-  ];
-  const healthTail = [
-    `${dietGuide(summary.low)}를 더하면 컨디션이 더 편안하게 유지됩니다.`,
-    `${dietGuide(summary.low)}와 함께 조용한 휴식 공간을 마련하면 안정감이 커져요.`,
-    `${dietGuide(summary.low)}를 곁들이면 에너지 기복이 줄어듭니다.`,
-    `${dietGuide(summary.low)}와 함께 가벼운 스트레칭이나 산책이 잘 맞아요.`,
-    `${dietGuide(summary.low)}를 더하면 소화와 컨디션의 리듬이 부드러워집니다.`,
-    `${dietGuide(summary.low)}를 챙겨주면 회복력이 올라갈 수 있어요.`,
-    `${dietGuide(summary.low)}와 짧은 놀이를 번갈아 주면 균형이 잘 맞습니다.`,
-    `${dietGuide(summary.low)}를 곁들이면 안정된 에너지 흐름을 만들 수 있어요.`,
-  ];
-  const bondLines = [
-    `${summary.secondary} 기운이 따뜻한 교감을 키워주며 ${element.name} 기운이 유대감을 단단하게 잡아줘요.`,
-    `오늘은 ${summary.secondary} 기운이 다정함을 돋우고, ${element.name} 기운이 신뢰를 차분히 쌓아줘요.`,
-    `${element.name} 기운이 마음의 거리감을 줄여주고, ${summary.secondary} 기운이 부드럽게 연결해줘요.`,
-    `${summary.secondary} 기운이 소통의 리듬을 만들고, ${element.name} 기운이 안정감을 더해줍니다.`,
-    `${summary.secondary} 기운 덕분에 주인의 작은 반응에도 신뢰가 깊어져요.`,
-    `${element.name} 기운이 정서적 거리감을 줄여 주어 오늘은 쉽게 마음이 열립니다.`,
-    `${summary.secondary} 기운이 따뜻함을 유지해 대화 같은 교감이 이어질 수 있어요.`,
-    `${element.name} 기운이 차분함을 보태 친밀감이 오래 유지됩니다.`,
-  ];
-  const bondTail = [
-    `반려동물이 주인의 반응을 세심하게 살피기 때문에, 짧은 칭찬이나 눈맞춤만으로도 신뢰가 깊어질 수 있어요.`,
-    `오늘은 작은 손길 하나에도 크게 반응할 수 있으니, 천천히 다정한 리듬을 맞춰보세요.`,
-    `목소리 톤과 템포를 부드럽게 맞추면 유대감이 더 촘촘해질 거예요.`,
-    `오늘은 짧은 스킨십이 긴 안정감으로 이어지기 쉬운 날이에요.`,
-    `부드러운 눈맞춤만으로도 충분한 교감이 만들어질 수 있습니다.`,
-    `천천히 말 걸어주면 마음의 긴장이 풀리며 가까워질 수 있어요.`,
-    `익숙한 놀이를 반복해주면 안정적인 유대감이 깊어집니다.`,
-    `작은 칭찬이 큰 신뢰로 돌아오는 날이에요.`,
-  ];
-  const bonusLines = [
-    `오행 점수는 목 ${score.목} · 화 ${score.화} · 토 ${score.토} · 금 ${score.금} · 수 ${score.수} 입니다. 강한 기운을 억지로 누르기보다, ${summary.low} 기운을 보완하는 루틴을 추가해주면 전체 균형이 부드럽게 맞춰져요.`,
-    `오행 점수는 목 ${score.목} · 화 ${score.화} · 토 ${score.토} · 금 ${score.금} · 수 ${score.수} 입니다. ${summary.dominant} 기운을 살리면서 ${summary.low} 기운을 채워주면 감정과 컨디션이 더 안정돼요.`,
-    `오행 점수는 목 ${score.목} · 화 ${score.화} · 토 ${score.토} · 금 ${score.금} · 수 ${score.수} 입니다. 오늘은 ${summary.low} 기운을 보완하는 작은 배려가 큰 안정감으로 돌아오는 날입니다.`,
-    `오행 점수는 목 ${score.목} · 화 ${score.화} · 토 ${score.토} · 금 ${score.금} · 수 ${score.수} 입니다. 오늘은 ${summary.dominant} 기운이 주도하지만, ${summary.low}를 보충하면 하루의 균형이 더 매끄럽게 이어져요.`,
-    `오행 점수는 목 ${score.목} · 화 ${score.화} · 토 ${score.토} · 금 ${score.금} · 수 ${score.수} 입니다. 균형을 맞추기 위해 ${summary.low}에 맞는 작은 행동을 반복해보세요.`,
-    `오행 점수는 목 ${score.목} · 화 ${score.화} · 토 ${score.토} · 금 ${score.금} · 수 ${score.수} 입니다. 오늘은 리듬이 안정적이니, 부드러운 루틴이 최고의 선물이 됩니다.`,
-    `오행 점수는 목 ${score.목} · 화 ${score.화} · 토 ${score.토} · 금 ${score.금} · 수 ${score.수} 입니다. ${summary.secondary} 기운을 살리면 감정과 컨디션이 더 고르게 이어집니다.`,
-    `오행 점수는 목 ${score.목} · 화 ${score.화} · 토 ${score.토} · 금 ${score.금} · 수 ${score.수} 입니다. 오늘은 작은 배려가 큰 안정감으로 돌아오는 날이에요.`,
-  ];
+  const balanceLine = translations[getLang()]?.balance_line?.(
+    getElementInfo(summary.dominant).name,
+    getElementInfo(summary.secondary).name,
+    getElementInfo(summary.low).name,
+  ) || '';
+  const interpret = getInterpretSet();
   const pick = (list, seed, offset) => list[(seed + offset) % list.length];
   return `
-    <p><strong>${name}</strong> (${todayLabel}) · <strong>${element.name}</strong></p>
+    <p><strong>${name}</strong> (${todayLabel}) · <strong>${elementInfo.name}</strong></p>
     <p><strong>${t('analysis_title')}</strong> : ${balanceLine} ${actionGuide(summary.low)}</p>
-    <p><strong>${t('emotion_title')}</strong> : ${pick(emotionLines, seedValue, 1)} ${pick(emotionTail, seedValue, 2)}</p>
-    <p><strong>${t('health_title')}</strong> : ${pick(healthLines, seedValue, 3)} ${pick(healthTail, seedValue, 4)}</p>
-    <p><strong>${t('bond_title')}</strong> : ${pick(bondLines, seedValue, 5)} ${pick(bondTail, seedValue, 6)}</p>
-    <p><strong>${t('bonus_title')}</strong> : ${pick(bonusLines, seedValue, 7)}</p>
+    <p><strong>${t('emotion_title')}</strong> : ${pick(interpret.emotionLines, seedValue, 1)} ${pick(interpret.emotionTail, seedValue, 2)}</p>
+    <p><strong>${t('health_title')}</strong> : ${pick(interpret.healthLines, seedValue, 3)} ${pick(interpret.healthTail, seedValue, 4)}</p>
+    <p><strong>${t('bond_title')}</strong> : ${pick(interpret.bondLines, seedValue, 5)} ${pick(interpret.bondTail, seedValue, 6)}</p>
+    <p><strong>${t('bonus_title')}</strong> : ${pick(interpret.bonusLines, seedValue, 7)} (목 ${score.목} · 화 ${score.화} · 토 ${score.토} · 금 ${score.금} · 수 ${score.수})</p>
   `;
 }
 
@@ -1458,37 +2077,40 @@ form.addEventListener('submit', (event) => {
 
   const seed = seedFromInput(name, gender, year, month, day);
   const element = elements[seed % elements.length];
+  const elementInfo = getElementInfo(element.name);
 
   const yearGanzi = calcYearGanzi(year);
   const monthGanzi = calcMonthGanzi(year, month);
   const dayGanzi = calcDayGanzi(year, month, day);
   const ganziLabel = `${yearGanzi.label} ${monthGanzi.label} ${dayGanzi.label}`;
 
-  const term = getSolarTerm(new Date(year, month - 1, day));
+  const termIndex = getSolarTermIndex(new Date(year, month - 1, day));
+  const termName = getTermName(termIndex);
   const allElements = [yearGanzi.elements, monthGanzi.elements, dayGanzi.elements, [element.name]];
   const score = elementScore(allElements);
   const summary = elementSummary(score);
+  const seedValue = seed + score.목 * 3 + score.화 * 5 + score.토 * 7 + score.금 * 11 + score.수 * 13;
 
   resultTable.innerHTML = `
     <tr>
       <td>${t('row_element')}</td>
-      <td>${element.name}</td>
-      <td>${element.vibe} · ${element.note}</td>
+      <td>${elementInfo.name}</td>
+      <td>${elementInfo.vibe} · ${elementInfo.note}</td>
     </tr>
     <tr>
       <td>${t('row_ganzi')}</td>
       <td>${ganziLabel}</td>
-      <td>${ganziLabel}의 흐름이 오늘의 기운 균형에 영향을 줘요.</td>
+      <td>${t('row_ganzi_desc')}</td>
     </tr>
     <tr>
       <td>${t('row_term')}</td>
-      <td>${term}</td>
-      <td>${term} 절기의 기운이 감정의 결을 부드럽게 해줘요.</td>
+      <td>${termName}</td>
+      <td>${t('row_term_desc')}</td>
     </tr>
   `;
 
-  resultCards.innerHTML = buildCards(name, element, term, summary);
-  resultText.innerHTML = buildInterpretation(name, element, ganziLabel, term, summary, score);
+  resultCards.innerHTML = buildCards(name, elementInfo, termName, summary);
+  resultText.innerHTML = buildInterpretation(name, elementInfo, ganziLabel, termName, summary, score, seedValue);
   saveInputs();
 });
 
