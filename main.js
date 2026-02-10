@@ -1295,43 +1295,81 @@ function buildInterpretation(name, element, ganziLabel, term, summary, score) {
   const balanceLine = translations[languageSelect.value]?.balance_line?.(summary.dominant, summary.secondary, summary.low) || '';
   const ganziInsight = `${ganziLabel}의 리듬은 ${summary.dominant} 기운을 끌어올리고 ${summary.low} 기운을 보완하는 흐름을 보여요.`;
   const termInsight = `${term} 절기의 계절감은 감정 표현을 부드럽게 만들고 안정감을 더해줍니다.`;
+  const petSeed = seedFromInput(name, genderInput.value, Number(yearSelect.value), Number(monthSelect.value), Number(daySelect.value));
+  const seedValue = petSeed + score.목 * 3 + score.화 * 5 + score.토 * 7 + score.금 * 11 + score.수 * 13;
   const emotionLines = [
     `오늘 반려동물의 마음속 생각은 “주인이 나를 보고 있을까?”에 가까워요. ${element.vibe}의 기운이 올라와 시선과 기척에 민감해지고, 관심을 받고 싶다는 생각이 커집니다.`,
     `지금 반려동물은 “조금 더 가까이 있고 싶어”라는 마음이 강해요. ${element.name} 기운이 살아나 작은 손길에도 기대감을 느끼고, 가까이 머물고 싶다는 생각이 자주 떠올라요.`,
     `오늘의 생각은 “지금이 편안한 시간이야”로 이어지기 쉬워요. ${element.note} 덕분에 안전한 공간과 익숙한 목소리를 선호하고, 안정감을 확인하려는 마음이 커집니다.`,
+    `반려동물의 머릿속에는 “오늘은 나를 알아봐 줬으면 좋겠어”라는 메시지가 흐르고 있어요. 주변을 살피며 주인의 반응을 기다리는 마음이 은근히 강합니다.`,
+    `지금은 “조금 놀아볼까?”라는 생각이 도드라져요. ${element.name} 기운이 활짝 피면서 짧은 놀이에 대한 기대감이 커집니다.`,
+    `오늘의 속마음은 “조용히 쉬면서도 곁에 있고 싶어”에 가까워요. 차분한 분위기 속에서 함께 시간을 나누고 싶어합니다.`,
+    `반려동물은 “나를 안심시켜줘”라는 감각을 가지고 있어요. 익숙한 루틴과 부드러운 목소리가 마음을 안정시켜줍니다.`,
+    `오늘은 “내가 안전한지 확인하고 싶어”라는 생각이 스며들어요. 작은 변화에도 민감해져 주인의 반응을 살핍니다.`,
+    `“조금 더 칭찬받고 싶어”라는 마음이 커져요. 작은 행동에도 반응해 주길 바라는 날입니다.`,
+    `지금의 생각은 “여기서 더 머물래”에 가까워요. 익숙한 자리와 따뜻한 체온을 선호합니다.`,
   ];
   const emotionTail = [
     `${termInsight} 그래서 조용히 곁에 머물거나 부드럽게 애교를 부리는 행동이 늘 수 있어요.`,
     `${termInsight} 덕분에 생각이 느긋해지고, 작은 칭찬에도 기분이 쉽게 올라오는 하루예요.`,
     `${termInsight}로 인해 마음이 차분하게 정리되어, 잠시 쉬고 싶다는 신호가 자연스럽게 나올 수 있어요.`,
+    `${termInsight} 덕분에 주변의 소리와 냄새에 더 섬세하게 반응할 수 있어요.`,
+    `${termInsight}가 안정감을 키워주어, 오늘은 잔잔한 교감이 특히 잘 맞아요.`,
+    `${termInsight}로 인해 감정이 부드럽게 흘러, 무리한 자극은 피하는 편이 좋아요.`,
+    `${termInsight}가 기분을 포근하게 만들어, 살짝 장난스러운 신호가 늘 수 있습니다.`,
+    `${termInsight}로 인해 오늘은 느린 리듬이 가장 잘 어울립니다.`,
   ];
   const healthLines = [
     `${ganziInsight} 몸의 리듬이 안정되는 날이라 가벼운 활동과 충분한 휴식이 균형을 만들어줘요.`,
     `${ganziInsight} 오늘은 과한 흥분보다는 규칙적인 놀이가 컨디션에 잘 맞아요.`,
     `${ganziInsight} 컨디션이 흔들리지 않도록 짧고 빈번한 휴식이 도움이 됩니다.`,
+    `${ganziInsight} 체력의 흐름이 고르게 퍼져 과도한 운동보다 가벼운 움직임이 좋아요.`,
+    `${ganziInsight} 신체 리듬이 차분해져 잠깐의 휴식이 크게 도움이 되는 날입니다.`,
+    `${ganziInsight} 몸의 균형이 서서히 맞춰지는 날이라 무리하지 않는 것이 포인트예요.`,
+    `${ganziInsight} 활동성과 휴식의 리듬을 맞추면 피로감이 줄어들 수 있어요.`,
+    `${ganziInsight} 오늘은 평소보다 컨디션의 변동 폭이 작아 안정적인 하루가 됩니다.`,
   ];
   const healthTail = [
     `${dietGuide(summary.low)}를 더하면 컨디션이 더 편안하게 유지됩니다.`,
     `${dietGuide(summary.low)}와 함께 조용한 휴식 공간을 마련하면 안정감이 커져요.`,
     `${dietGuide(summary.low)}를 곁들이면 에너지 기복이 줄어듭니다.`,
+    `${dietGuide(summary.low)}와 함께 가벼운 스트레칭이나 산책이 잘 맞아요.`,
+    `${dietGuide(summary.low)}를 더하면 소화와 컨디션의 리듬이 부드러워집니다.`,
+    `${dietGuide(summary.low)}를 챙겨주면 회복력이 올라갈 수 있어요.`,
+    `${dietGuide(summary.low)}와 짧은 놀이를 번갈아 주면 균형이 잘 맞습니다.`,
+    `${dietGuide(summary.low)}를 곁들이면 안정된 에너지 흐름을 만들 수 있어요.`,
   ];
   const bondLines = [
     `${summary.secondary} 기운이 따뜻한 교감을 키워주며 ${element.name} 기운이 유대감을 단단하게 잡아줘요.`,
     `오늘은 ${summary.secondary} 기운이 다정함을 돋우고, ${element.name} 기운이 신뢰를 차분히 쌓아줘요.`,
     `${element.name} 기운이 마음의 거리감을 줄여주고, ${summary.secondary} 기운이 부드럽게 연결해줘요.`,
+    `${summary.secondary} 기운이 소통의 리듬을 만들고, ${element.name} 기운이 안정감을 더해줍니다.`,
+    `${summary.secondary} 기운 덕분에 주인의 작은 반응에도 신뢰가 깊어져요.`,
+    `${element.name} 기운이 정서적 거리감을 줄여 주어 오늘은 쉽게 마음이 열립니다.`,
+    `${summary.secondary} 기운이 따뜻함을 유지해 대화 같은 교감이 이어질 수 있어요.`,
+    `${element.name} 기운이 차분함을 보태 친밀감이 오래 유지됩니다.`,
   ];
   const bondTail = [
     `반려동물이 주인의 반응을 세심하게 살피기 때문에, 짧은 칭찬이나 눈맞춤만으로도 신뢰가 깊어질 수 있어요.`,
     `오늘은 작은 손길 하나에도 크게 반응할 수 있으니, 천천히 다정한 리듬을 맞춰보세요.`,
     `목소리 톤과 템포를 부드럽게 맞추면 유대감이 더 촘촘해질 거예요.`,
+    `오늘은 짧은 스킨십이 긴 안정감으로 이어지기 쉬운 날이에요.`,
+    `부드러운 눈맞춤만으로도 충분한 교감이 만들어질 수 있습니다.`,
+    `천천히 말 걸어주면 마음의 긴장이 풀리며 가까워질 수 있어요.`,
+    `익숙한 놀이를 반복해주면 안정적인 유대감이 깊어집니다.`,
+    `작은 칭찬이 큰 신뢰로 돌아오는 날이에요.`,
   ];
   const bonusLines = [
     `오행 점수는 목 ${score.목} · 화 ${score.화} · 토 ${score.토} · 금 ${score.금} · 수 ${score.수} 입니다. 강한 기운을 억지로 누르기보다, ${summary.low} 기운을 보완하는 루틴을 추가해주면 전체 균형이 부드럽게 맞춰져요.`,
     `오행 점수는 목 ${score.목} · 화 ${score.화} · 토 ${score.토} · 금 ${score.금} · 수 ${score.수} 입니다. ${summary.dominant} 기운을 살리면서 ${summary.low} 기운을 채워주면 감정과 컨디션이 더 안정돼요.`,
     `오행 점수는 목 ${score.목} · 화 ${score.화} · 토 ${score.토} · 금 ${score.금} · 수 ${score.수} 입니다. 오늘은 ${summary.low} 기운을 보완하는 작은 배려가 큰 안정감으로 돌아오는 날입니다.`,
+    `오행 점수는 목 ${score.목} · 화 ${score.화} · 토 ${score.토} · 금 ${score.금} · 수 ${score.수} 입니다. 오늘은 ${summary.dominant} 기운이 주도하지만, ${summary.low}를 보충하면 하루의 균형이 더 매끄럽게 이어져요.`,
+    `오행 점수는 목 ${score.목} · 화 ${score.화} · 토 ${score.토} · 금 ${score.금} · 수 ${score.수} 입니다. 균형을 맞추기 위해 ${summary.low}에 맞는 작은 행동을 반복해보세요.`,
+    `오행 점수는 목 ${score.목} · 화 ${score.화} · 토 ${score.토} · 금 ${score.금} · 수 ${score.수} 입니다. 오늘은 리듬이 안정적이니, 부드러운 루틴이 최고의 선물이 됩니다.`,
+    `오행 점수는 목 ${score.목} · 화 ${score.화} · 토 ${score.토} · 금 ${score.금} · 수 ${score.수} 입니다. ${summary.secondary} 기운을 살리면 감정과 컨디션이 더 고르게 이어집니다.`,
+    `오행 점수는 목 ${score.목} · 화 ${score.화} · 토 ${score.토} · 금 ${score.금} · 수 ${score.수} 입니다. 오늘은 작은 배려가 큰 안정감으로 돌아오는 날이에요.`,
   ];
   const pick = (list, seed, offset) => list[(seed + offset) % list.length];
-  const seedValue = score.목 * 3 + score.화 * 5 + score.토 * 7 + score.금 * 11 + score.수 * 13;
   return `
     <p><strong>${name}</strong> (${todayLabel}) · <strong>${element.name}</strong></p>
     <p><strong>${t('analysis_title')}</strong> : ${balanceLine} ${actionGuide(summary.low)}</p>
