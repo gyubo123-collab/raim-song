@@ -41,6 +41,37 @@ html[dir="rtl"] body {
   overflow: hidden;
 }
 
+.lang-switch {
+  position: absolute;
+  top: 18px;
+  right: 24px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 12px;
+  background: rgba(255, 248, 242, 0.9);
+  border-radius: 999px;
+  border: 1px solid rgba(224, 170, 160, 0.45);
+  box-shadow: 0 10px 20px rgba(224, 160, 150, 0.18);
+}
+
+html[dir="rtl"] .lang-switch {
+  right: auto;
+  left: 24px;
+}
+
+.lang-label {
+  font-family: 'Jua', sans-serif;
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+.lang-switch select {
+  padding: 8px 12px;
+  border-radius: 999px;
+  background: #fff2ec;
+}
+
 .hero::before,
 .hero::after {
   content: '';
@@ -147,9 +178,6 @@ html[dir="rtl"] body {
   color: var(--muted);
 }
 
-.lang-field select {
-  background: #fff2ec;
-}
 
 input,
 select {
